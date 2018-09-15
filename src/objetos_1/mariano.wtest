@@ -35,6 +35,34 @@ describe "tests de mariano" {
 		assert.equals([alfajor,oblea], mariano.golosinasFaltantes([chocolatin, caramelo, alfajor, oblea]))
 	}
 	
+	test "golosinas sin tacc"{
+		assert.that(mariano.hayGolosinaSinTACC())
+	}
+	
+	test "precios cuidados"{
+		assert.notThat(mariano.preciosCuidados())
+	}
+	
+	test "golosina de sabor <frutilla>"{
+		assert.equals(caramelo, mariano.golosinaDeSabor("frutilla"))
+	}
+	
+	test "golosinas de sabor <frutilla>"{
+		assert.equals([caramelo, bombon], mariano.golosinasDeSabor("frutilla"))
+	}
+	
+	test "sabores"{
+		assert.equals(["frutilla", "chocolate"])
+	}
+	
+	test "golosina mas cara"{
+		assert.equals(chocolatin, mariano.golosinaMasCara())
+	}
+	
+	test "peso golosina"{
+		assert.equals(120, mariano.pesoGolosinas())
+	}
+	
 	test "gustos faltantes"{
 		assert.equals(["naranja"], mariano.gustosFaltantes(["frutilla", "naranja", "chocolate"]))
 	}
