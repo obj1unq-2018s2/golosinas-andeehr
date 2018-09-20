@@ -15,12 +15,13 @@ describe "test de tuttifrutti" {
 	}
 	
 	test "mordiscos" {
+		assert.equals("frutilla", tuttifrutti.gusto())
 		tuttifrutti.mordisco()
-		assert.equals(5, tuttifrutti.peso())
 		assert.equals("chocolate", tuttifrutti.gusto())
 		tuttifrutti.mordisco()
-		assert.equals(5, tuttifrutti.peso())
 		assert.equals("naranja", tuttifrutti.gusto())
+		tuttifrutti.mordisco()
+		assert.equals("frutilla", tuttifrutti.gusto())
 	}
 	
 	test "gusto" {

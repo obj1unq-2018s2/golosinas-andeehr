@@ -52,7 +52,7 @@ describe "tests de mariano" {
 	}
 	
 	test "sabores"{
-		assert.equals(["frutilla", "chocolate"])
+		assert.equals(["chocolate", "frutilla"], mariano.sabores())
 	}
 	
 	test "golosina mas cara"{

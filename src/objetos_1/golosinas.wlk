@@ -100,7 +100,7 @@ object golosinaBaniada {
 object tuttifrutti {
 	var peso = 5
 	var property libreGluten = false
-	var property gusto = "frutilla"
+	const property gustos = ["frutilla", "chocolate", "naranja"]
 	method precio() {
 		if (libreGluten){
 			return 7
@@ -108,15 +108,11 @@ object tuttifrutti {
 			return 10
 		}
 	}
+	method gusto() = gustos.first()
 	method peso() = peso
 	method mordisco(){
-		if (gusto == "frutilla"){
-			gusto = "chocolate"
-		} else if (gusto == "chocolate"){
-			gusto = "naranja"
-		} else {
-			gusto = "frutilla"
-		}
+		gustos.add(self.gusto())
+		gustos.remove(self.gusto())
 	}
 }
 

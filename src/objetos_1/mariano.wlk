@@ -20,7 +20,7 @@ object mariano {
 
 	method golosinasDeSabor(unSabor) = golosinas.filter{ golosina => golosina.gusto() == unSabor }
 
-	method sabores() = (golosinas.map{ golosina => golosina.gusto() }).asSet()
+	method sabores() = (golosinas.map{ golosina => golosina.gusto() }).withoutDuplicates()
 	
 	method golosinaMasCara() = golosinas.max{golosina => golosina.precio()}
 	
