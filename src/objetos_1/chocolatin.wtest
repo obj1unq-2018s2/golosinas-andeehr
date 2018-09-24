@@ -1,32 +1,34 @@
 import golosinas.*
 
-describe "test de chocolatin" {
+describe "test de golosina" {
+	
+	var golosina = new Chocolatin()
 	
 	fixture {
-		chocolatin.pesoInicial(100)
+		golosina.pesoInicial(100)
 	}
 	
 	test "peso inicial" {
-		assert.equals(100, chocolatin.peso())
+		assert.equals(100, golosina.peso())
 	}
 	
 	test "precio" {
-		assert.equals(50, chocolatin.precio())
+		assert.equals(50, golosina.precio())
 	}
 	
 	test "mordiscos" {
-		chocolatin.mordisco()
-		assert.equals(98, chocolatin.peso())
-		chocolatin.mordisco()
-		assert.equals(96, chocolatin.peso())
+		golosina.mordisco()
+		assert.equals(98, golosina.peso())
+		golosina.mordisco()
+		assert.equals(96, golosina.peso())
 	}
 	
 	test "gusto" {
-		assert.equals("chocolate", chocolatin.gusto())
+		assert.equals("chocolate", golosina.gusto())
 	}
 	
 	test "libre de gluten" {
-		assert.notThat(chocolatin.libreGluten())	
+		assert.notThat(golosina.libreGluten())	
 	}
 	
 }

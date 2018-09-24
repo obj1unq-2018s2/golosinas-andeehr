@@ -2,6 +2,13 @@ import golosinas.*
 import mariano.*
 
 describe "tests de mariano" {
+	
+	var chocolatin = new Chocolatin()
+	var caramelo = new Caramelo()
+	var bombon = new Bombon()
+	var chupetin = new Chupetin()
+	var alfajor = new Alfajor()
+	var oblea = new Oblea()
 
 	fixture {
 		chocolatin.pesoInicial(100)

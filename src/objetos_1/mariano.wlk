@@ -29,5 +29,9 @@ object mariano {
 	method golosinasFaltantes(golosinasDeseadas) = golosinasDeseadas.filter{golosina => !golosinas.contains(golosina)}
 	
 	method gustosFaltantes(gustosDeseados) = gustosDeseados.filter{gusto => !self.sabores().contains(gusto) }
+	
+	method baniar(unaGolosina) {
+		self.comprar(new GolosinaBaniada(golosinaInterior = unaGolosina))
+	}
 }
 

@@ -2,8 +2,10 @@ import golosinas.*
 
 describe "test de golosina baniada" {
 	
+	var golosinaBaniada = new GolosinaBaniada()
+	
 	fixture {
-		golosinaBaniada.baniaA(caramelo)
+		golosinaBaniada.baniaA(new Caramelo())
 	}
 	
 	test "peso inicial" {
