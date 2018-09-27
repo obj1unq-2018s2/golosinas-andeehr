@@ -75,6 +75,8 @@ class Chocolatin {
 			return 0
 // Consulta: Se que esto no es necesario, no lo pide, pero quise aplicar un error
 //			Me pide que retorne algo el methodo, que deberia retornar?
+// Respuesta: No te hagas problema por esto, podias retornar null,
+//			  en estos casos. Ya vamos a ver manejo de errores en detalle. 
 		} else {
 			return 0.5 * pesoInicial
 		}
