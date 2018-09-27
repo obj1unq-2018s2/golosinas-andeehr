@@ -1,3 +1,7 @@
+// Corregido, Esta muy bien, me gusto que hiciste
+// muchos test y refactorizaste todas las golocinas
+// a clases.
+
 class Bombon {
 	var peso = 15
 	
